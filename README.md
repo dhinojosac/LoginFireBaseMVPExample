@@ -1,7 +1,10 @@
 # LoginFireBaseMVPExample
 
 ## Login implementado con el patron de arquitectura MVP + Clean.
-Este login utiliza FireBase como backend aprovechando su servicio de login & Auth.
+Este login utiliza **FireBase** como backend aprovechando su servicio de login & Auth. [link](https://www.firebase.com/)
+
+Recuerde cambiar en la clase *FirebaseHelper* la direccion de su propia aplicacion **BASE_URL**.
+
 
 ### Librerias utilizadas:
 - compile 'com.android.support:design:23.4.0'
