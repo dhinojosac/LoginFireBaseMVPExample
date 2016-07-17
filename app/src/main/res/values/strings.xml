@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginFireBaseExample</string>
+
+    <string name="login.message.email">Corrreo electronico</string>
+    <string name="login.message.password">Password</string>
+    <string name="login.button.signin">Iniciar sesion</string>
+    <string name="login.button.signup">Crear cuenta</string>
+    <string name="login.error.message.signin">Imposible iniciar sesion %s</string>
+    <string name="login.error.message.signup">Imposible registrar nuevo usuario %s</string>
+    <string name="login.notice.message.signup">Usuario agregado exitosamente</string>
+
+
+</resources>
