@@ -4,7 +4,7 @@ package com.dhinojosac.android.loginfirebaseexample.lib;
  * Created by negro-PC on 17-Jul-16.
  */
 public class GreenRobotEventBus implements EventBus {
-    de.greenrobot.event.EventBus eventBus;
+    org.greenrobot.eventbus.EventBus eventBus;
 
     private static class SingletonHolder{
         private static final GreenRobotEventBus INSTANCE = new GreenRobotEventBus();
@@ -15,7 +15,7 @@ public class GreenRobotEventBus implements EventBus {
     }
 
     public GreenRobotEventBus() {
-        this.eventBus = de.greenrobot.event.EventBus.getDefault();
+        this.eventBus = org.greenrobot.eventbus.EventBus.getDefault();
     }
 
     @Override

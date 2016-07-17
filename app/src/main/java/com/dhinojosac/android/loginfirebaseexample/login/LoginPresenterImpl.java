@@ -5,6 +5,8 @@ import com.dhinojosac.android.loginfirebaseexample.lib.GreenRobotEventBus;
 import com.dhinojosac.android.loginfirebaseexample.login.events.LoginEvent;
 import com.dhinojosac.android.loginfirebaseexample.login.ui.LoginView;
 
+import org.greenrobot.eventbus.Subscribe;
+
 /**
  * Created by negro-PC on 16-Jul-16.
  */
@@ -57,6 +59,7 @@ public class LoginPresenterImpl implements LoginPresenter{
         loginInteractor.doSignUp(email, password);
     }
 
+    @Subscribe
     @Override
     public void onEventMainThread(LoginEvent event) {
         switch (event.getEventType()){

@@ -41,5 +41,12 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
 
     //EventBus
-    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    // Librerias utilizadas mas alla del login
+    //Glide
+    compile  'com.github.bumptech.glide:glide:3.6.1'
+
+    //CircleImageView
+    compile 'de.hdodenhof:circleimageview:2.0.0'
 }
