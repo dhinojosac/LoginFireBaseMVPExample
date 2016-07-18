@@ -10,11 +10,10 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.dhinojosac.android.loginfirebaseexample.MainActivity;
+import com.dhinojosac.android.loginfirebaseexample.contactlist.ui.ContactListActivity;
 import com.dhinojosac.android.loginfirebaseexample.R;
 import com.dhinojosac.android.loginfirebaseexample.login.LoginPresenter;
 import com.dhinojosac.android.loginfirebaseexample.login.LoginPresenterImpl;
-import com.dhinojosac.android.loginfirebaseexample.login.ui.LoginView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -92,7 +91,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToMainScreen() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, ContactListActivity.class));
     }
 
     @Override

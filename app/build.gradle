@@ -19,7 +19,7 @@ android {
     }
 
     //FIREBASE
-    packagingOptions{
+    packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE-FIREBASE.txt'
         exclude 'META-INF/NOTICE'
@@ -29,13 +29,14 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
 
     //Design
+    compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
 
     //Firebase
-    compile 'com.firebase:firebase-client-android:2.5.0+'
+    compile 'com.firebase:firebase-client-android:2.5.0'
 
     //ButterKnife
     compile 'com.jakewharton:butterknife:7.0.1'
@@ -45,8 +46,11 @@ dependencies {
 
     // Librerias utilizadas mas alla del login
     //Glide
-    compile  'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
 
     //CircleImageView
     compile 'de.hdodenhof:circleimageview:2.0.0'
+
+
+
 }

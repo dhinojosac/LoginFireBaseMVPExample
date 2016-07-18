@@ -9,5 +9,17 @@
     <string name="login.error.message.signup">Imposible registrar nuevo usuario %s</string>
     <string name="login.notice.message.signup">Usuario agregado exitosamente</string>
 
+    <string name="contactlist.menu.action.signoff">Cerrar sesion</string>
+    <string name="contactlist.title">Contactos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="addcontact.message.title">Agregar contacto</string>
+    <string name="addcontact.message.add">Aceptar</string>
+    <string name="addcontact.message.cancel">Cancelar</string>
+    <string name="addcontact.message.contactadded">Contacto agregado exitasamente</string>
+    <string name="addcontact.error.message">Imposible agregar usuario no existente</string>
+
 
 </resources>
