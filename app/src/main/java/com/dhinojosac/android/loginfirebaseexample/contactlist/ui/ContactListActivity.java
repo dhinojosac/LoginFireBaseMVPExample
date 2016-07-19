@@ -47,11 +47,31 @@ public class ContactListActivity extends AppCompatActivity implements ContactLis
         setContentView(R.layout.activity_contact_list);
         ButterKnife.bind(this);
 
-        setupAdapter();
-        setupRecyclerView();
         presenter = new ContactListPresenterImpl(this);
         presenter.onCreate();
+
+        setupAdapter();
+        setupRecyclerView();
         setupToolbar();
+        //presenter.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.onDestroy();
+    }
+
+    @Override
+    protected void onResume() {
+        presenter.onResume();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        presenter.onPause();
+        super.onPause();
     }
 
     @Override
@@ -88,23 +108,7 @@ public class ContactListActivity extends AppCompatActivity implements ContactLis
         setSupportActionBar(toolbar);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        presenter.onDestroy();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        presenter.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        presenter.onPause();
-    }
 
 
     @OnClick(R.id.fab)

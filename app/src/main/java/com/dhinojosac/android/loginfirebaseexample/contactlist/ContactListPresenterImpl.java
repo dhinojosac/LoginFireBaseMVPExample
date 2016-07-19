@@ -27,6 +27,8 @@ public class ContactListPresenterImpl implements ContactListPresenter{
     @Override
     public void onCreate() {
         eventBus.register(this);
+        sessionInteractor.changeConnectionStatus(User.ONLINE);
+        listInteractor.subscribe();
     }
 
     @Override
